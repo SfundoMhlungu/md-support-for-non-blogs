@@ -4,6 +4,10 @@ import markdownIt from './markdown-it.min.js'
 
 console.log(markdownIt)
 
+
+const md = markdownIt();
+const result = md.render('# markdown-it rulezz!');
+console.log(result, "MARKDOWN RESULT")
 // Wait for the DOM to load
 
 function copyTextToClipboard(text) {
@@ -82,7 +86,8 @@ console.log("content script")
           console.log(textBlob, "blob")
           copyTextToClipboard(textBlob);
           // Parse markdown using a markdown library (e.g., marked.js)
-          const parsedMarkdown = marked(textBlob);
+          const parsedMarkdown = md.render(textBlob);
+          console.log(parsedMarkdown, "helllow")
       
           // Create a new div with the parsed content
           const newDiv = document.createElement('div');
