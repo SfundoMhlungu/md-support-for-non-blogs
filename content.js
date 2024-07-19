@@ -1,3 +1,9 @@
+// import "https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/dist/markdown-it.min.js"
+// console.log(markdownIt)
+import markdownIt from './markdown-it.min.js'
+
+console.log(markdownIt)
+
 // Wait for the DOM to load
 
 function copyTextToClipboard(text) {
