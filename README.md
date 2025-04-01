@@ -11,4 +11,4 @@ pnpm install
 pnpm run build
 ```
 
-Load the extension(build/dist) in a browser
+Load the extension(build/dist) in a browser.
